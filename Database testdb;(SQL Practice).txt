@@ -1,0 +1,56 @@
+Database testdb;
+create table student(
+id int primary key,
+Age int NOT null,
+city char(50),
+salary numeric
+);
+select* from student
+insert into values(1, 'vibha','singh',400000, 89457567);
+select *from student;
+
+
+create database employee
+use employee
+create table employee_tbi(
+empId int primary key,
+FirstName varchar(50),
+LastName varchar(50),
+Salary float,
+Mob_no varchar(15)
+);
+
+select*from employee_tbi
+delete from employee_tbi where empId=2
+select *from employee_tbi
+update employee_tbi set FirstName='Juli' where empId=3
+update employee_tbi set Salary=70000 where empId=4
+select *from employee_tbi
+insert into employee_tbi values(5, 'prachi', 'chaudhary', 80000, '9118795000');
+insert into employee_tbi values(6, 'Naina', 'Johri', 90000, '9216795000');
+select *from employee_tbi
+select salary, FirstName from employee_tbi
+select *from employee_tbi
+select UPPER(FirstName) from employee_tbi
+select *from employee_tbi
+select Lower(LastName) from employee_tbi
+select *from employee_tbi
+select SUBSTRING(FirstName,1,3), FirstName from employee_tbi
+select *from employee_tbi
+select CONCAT(FirstName,LastName), FirstName, LastName from employee_tbi
+select REPLACE(FirstName,'ram','raman'), FirstName, LastName from employee_tbi
+SELECT TRIM('     madhu    ') AS TrimmedString;
+select *from employee_tbi
+
+select count(*) from employee_tbi
+select count(salary) from employee_tbi
+select sum(salary) from employee_tbi
+select AVG(salary) from employee_tbi
+select MAX(salary) from employee_tbi
+select MIN(salary) from employee_tbi
+select ROUND(AVG(salary),2) from employee_tbi
+select*from employee_tbi
+ --SELECT*from employee_tbi where  salary>=10000 Group By Salary Having count(salary)>=3 Order BY salary ASC 
+ select * from employee_tbi
+
+
